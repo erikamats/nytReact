@@ -1,0 +1,1 @@
+module.exports = "mongodb://NYTArticles:articles1@ds223161.mlab.com:23161/articlesmern"
