@@ -10,21 +10,20 @@ const MONGODB_URI = require("./config/keys")
 
 const PORT = process.env || 3001;
 
+const Articles = require("./models/articles");
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static("client/build"));
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+  }
 
 app.use(routes);
 
 // mongoose.Promise = global.Promise;
 // mongoose.connect(
-//     MONGODB_URI || "mongodb://localhost/nytReact",
-//     {
-//       useMongoClient: true
-//     }
-//   );
-
+//     MONGODB_URI || "mongodb://localhost/nytReact");
 
 
 app.listen(PORT, function(){
