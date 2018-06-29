@@ -1,0 +1,26 @@
+{
+  "name": "nytreact",
+  "version": "1.0.0",
+  "description": "nytMernApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikamats/nytReact.git"
+  },
+  "author": "matsi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erikamats/nytReact/issues"
+  },
+  "homepage": "https://github.com/erikamats/nytReact#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.7",
+    "react-router-dom": "^4.3.1"
+  }
+}
